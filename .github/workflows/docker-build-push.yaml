@@ -31,9 +31,9 @@ jobs:
         context: .
         platforms: linux/amd64,linux/arm64,linux/arm/v7
         push: true
-        tags: 
-        - bluven/curl:${{ github.ref_name }}
-        - bluven/curl:latest
+        tags: |
+          bluven/curl:${{ github.ref_name }}
+          bluven/curl:latest
         build-args: |
           REPOSITORY_URL=dl-cdn.alpinelinux.org
         
